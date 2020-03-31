@@ -34,16 +34,17 @@ class UserBoard extends Component {
 					const { id, real_name, tz } = item;
 
 					return <div key={i}>
-						<Card body inverse color="primary" className="userboard-card">
-							<Button onClick={() => this.toggle(id)}>
-								Name :- {real_name}
+						<Card body inverse style={{ backgroundColor: '#00203fff' }} className="userboard-card">
+							<Button onClick={() => this.toggle(id)} className="userboard-button">
+								<p>Name :- {real_name}</p>
 								<p>Country Name :- {tz}</p>
 							</Button>
-							<CardText>Click on the user Link to see the user Details</CardText>
+							<CardText>Click on the user Link to see the User Details</CardText>
 						</Card>
 						{isOpen && <ModalData toggle={this.toggle} isOpen={isOpen} />}
 					</div>
-				})}
+				})
+				}
 			</div >
 		);
 	}

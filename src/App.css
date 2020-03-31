@@ -5,6 +5,7 @@
 .userboard {
   width: 50%;
   margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
 }
 
 .userboard-header {
@@ -13,6 +14,28 @@
 
 .userboard-card {
   margin: 30px 10px;
+
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+p:hover {
+  text-decoration: underline;
+}
+
+.card-text {
+  margin-top: 10px;
+}
+
+.card-body {
+  background-color: #00203fff;
+}
+
+.btn-secondary {
+  background-color: #adf0d1 !important;
+  color: #00203fff !important;
 }
 
 .modal.show .modal-dialog {
