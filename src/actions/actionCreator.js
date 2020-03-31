@@ -1,4 +1,4 @@
-const url = 'http://5e81a49ec130270016a37378.mockapi.io/api/v1/users';
+const url = 'https://5e81a49ec130270016a37378.mockapi.io/api/v1/users';
 
 export function fetchData() {
     return (dispatch) => {
