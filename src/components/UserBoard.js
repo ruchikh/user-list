@@ -16,7 +16,6 @@ class UserBoard extends Component {
 	}
 
 	toggle = (id) => {
-		console.log('insidetoggle')
 		this.setState({
 			isOpen: !this.state.isOpen,
 		})
@@ -38,7 +37,7 @@ class UserBoard extends Component {
 						<Card body inverse color="primary" className="userboard-card">
 							<Button onClick={() => this.toggle(id)}>
 								Name :- {real_name}
-								<p>Country_Name :- {tz}</p>
+								<p>Country Name :- {tz}</p>
 							</Button>
 							<CardText>Click on the user Link to see the user Details</CardText>
 						</Card>
@@ -49,27 +48,6 @@ class UserBoard extends Component {
 		);
 	}
 }
-
-// const UserDeatails = (props) => {
-// 	const { isOpen, toggle, item } = props;
-// 	console.log(props, 'props')
-
-// 	return (
-// 		<div>
-// 			<Modal isOpen={isOpen}>
-// 				<ModalHeader toggle={toggle}>User Time Range</ModalHeader				<ModalBody>
-// 					{item && item.activity_periods.map((data, i) => {
-// 						console.log(data, 'data')
-// 						return <div>
-// 							<p>start_time{data.start_time}</p>
-// 							<p>End_time_time{data.end_time}</p>
-// 						</div>
-// 					})}
-// 				</ModalBody>
-// 			</Modal>
-// 		</div>
-// 	)
-// }
 
 const mapStateToProps = (state) => {
 	return {

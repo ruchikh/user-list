@@ -4,7 +4,6 @@ const initialState = {
 }
 
 export default function rootReducer(state = initialState, action) {
-    console.log(action.data)
     switch (action.type) {
         case 'FETCH_DATA': {
             return {

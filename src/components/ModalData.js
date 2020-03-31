@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 class ModalData extends Component {
     render() {
         const { isOpen, toggle, modalData } = this.props;
-        console.log(this.props, 'item')
 
         return (
             < div >
