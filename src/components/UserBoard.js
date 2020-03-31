@@ -36,8 +36,8 @@ class UserBoard extends Component {
 					return <div key={i}>
 						<Card body inverse style={{ backgroundColor: '#00203fff' }} className="userboard-card">
 							<Button onClick={() => this.toggle(id)} className="userboard-button">
-								<p>Name :- {real_name}</p>
-								<p>Country Name :- {tz}</p>
+								<h6>Name :- {real_name}</h6>
+								<h6>Country Name :- {tz}</h6>
 							</Button>
 							<CardText>Click on the user Link to see the User Details</CardText>
 						</Card>

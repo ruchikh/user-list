@@ -17,11 +17,7 @@
 
 }
 
-p {
-  margin-bottom: 0 !important;
-}
-
-p:hover {
+h6:hover {
   text-decoration: underline;
 }
 
